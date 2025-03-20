@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <!-- ---------------------Header------------------- -->
+  <nav class="navbar navbar-expand-lg  fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand ggnav me-auto" href="NewHome.html"><img src="logo.png" alt="" class="ggimg"></a>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" aria-current="page" href="NewHome.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="destination.html">Destination</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active mx-lg-2" href="booking.html">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="Login.html" class="login-button">Login</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+</nav>
+  <nav class="navbar">
+    <div class="navbar-container">
+      
+      <div class="nav-slogan">We are waiting to serve you our best!</div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="console">
+    <div class="tabs">
+        <span class="tab active">Flights</span>
+        <span class="tab">Hotels</span>
+        <span class="tab">Homestays & Villas</span>
+        <span class="tab">Holiday Packages</span>
+        <span class="tab">Trains</span>
+        <span class="tab">Buses</span>
+        <span class="tab">Cabs</span>
+    </div>
+
+    <div class="options">
+        <label><input type="radio" name="trip" checked> One Way</label>
+        <label><input type="radio" name="trip"> Round Trip</label>
+        <label><input type="radio" name="trip"> Multi City</label>
+    </div>
+
+    <div class="flight-details">
+        <div class="location">
+            <label>From</label>
+            <select>
+                <option value="DEL">Delhi, DEL - Delhi Airport India</option>
+                <option value="BOM">Mumbai, BOM - Chhatrapati Shivaji Airport</option>
+                <option value="BLR">Bengaluru, BLR - Bengaluru International Airport</option>
+                <option value="HYD">Hyderabad, HYD - Rajiv Gandhi International Airport</option>
+                <option value="MAA">Chennai, MAA - Chennai International Airport</option>
+            </select>
+        </div>
+        <div class="swap">&#8646;</div>
+        <div class="location">
+            <label>To</label>
+            <select>
+                <option value="BLR">Bengaluru, BLR - Bengaluru International Airport</option>
+                <option value="DEL">Delhi, DEL - Delhi Airport India</option>
+                <option value="BOM">Mumbai, BOM - Chhatrapati Shivaji Airport</option>
+                <option value="HYD">Hyderabad, HYD - Rajiv Gandhi International Airport</option>
+                <option value="MAA">Chennai, MAA - Chennai International Airport</option>
+            </select>
+        </div>
+
+        <div class="date">
+            <label>Departure</label>
+            <input type="date" value="2024-10-31">
+        </div>
+        <div class="date">
+            <label>Return</label>
+            <input type="date" value="2024-11-01">
+        </div>
+
+        <div class="travellers">
+            <label>Travellers & Class</label>
+            <input type="text" value="1 Traveller, Economy/Premium Economy">
+        </div>
+    </div>
+
+    <div class="fare-options">
+        <label>Select a special fare</label>
+        <div class="fare-buttons">
+            <button class="fare-btn active">Regular</button>
+            <button class="fare-btn">Student</button>
+            <button class="fare-btn">Senior Citizen</button>
+            <button class="fare-btn">Armed Forces</button>
+            <button class="fare-btn">Doctor and Nurses</button>
+        </div>
+    </div>
+
+    <button class="search-btn">BOOK NOW</button>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Popular Packages</a></li>
+          <li><a href="#">Travel Guides</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Last-Minute Deals</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Customer Support</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Booking Policies</a></li>
+          <li><a href="#">Travel Insurance</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+
+      <div class="footer-section footer-app">
+        <h3>Download Our App</h3>
+        <a href="#"><img src="applestore.png" alt="App Store" width="120" height="40"> </a>
+        <a href="#"><img src="googleplaystore.png" alt="Google Play" width="120" height="40"></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 IndiaSerne. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>document.addEventListener("DOMContentLoaded", function() {
+    // Select the "BOOK NOW" button
+    const bookNowButton = document.querySelector(".search-btn");
+  
+    // Add an event listener for the button click
+    bookNowButton.addEventListener("click", function() {
+      // Trigger an alert
+      alert("Your booking has been successfully submitted!");
+    });
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 120px;
+    background-color: #fff;
+}
+
+.ggnav {
+    font-weight: 500;
+    color: #4CAF50;
+    font-size: 24px;
+}
+
+.ggimg {
+    height: 110px;
+    padding-left: 20px;
+}
+
+.login-button {
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: #3e8e41;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #000;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #4CAF50;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+/* about.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 135px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #ff7f50; /* Coral Orange */
+}
+
+.about-header h1 {
+    font-size: 32px;
+    color: #ff7f50;
+}
+
+.about-header p {
+    font-size: 18px;
+    color: #555;
+}
+
+.agency-name {
+    font-weight: bold;
+    color: #ff7f50;
+}
+
+.about-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-content ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #555;
+}
+
+.about-content ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.about-content ul li strong {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 15px;
+    }
+
+    .about-header h1 {
+        font-size: 28px;
+    }
+
+    .about-content h2 {
+        font-size: 20px;
+    }
+
+    .about-content p,
+    .about-content ul li {
+        font-size: 15px;
+    }
+}
